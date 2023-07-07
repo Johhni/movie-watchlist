@@ -1,0 +1,231 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 550px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+header,
+main{
+    margin: 0;
+}
+
+header{
+    position: relative;
+}
+
+.header-img{
+    height: 208px;
+    width: 100%;
+    filter: brightness(20%);
+}
+
+h1{
+    position: absolute;
+    top: 1.1em;
+    left: 1em;
+    font-size: 2.625rem;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+/* Watchlist and Search page buttons*/
+
+.watch{
+    position: absolute;
+    top: 5.4em;
+    left: 30em;
+    cursor: pointer;
+}
+
+.search{
+    position: absolute;
+    top: 5.4em;
+    left: 27.5em;
+    cursor: pointer;
+}
+
+h4{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+main{
+    width: 100%;
+    height: 571px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+/* Search Bar */
+
+.search-bar{
+    display: flex;
+    font-size: 0.875rem;
+    position: relative;
+}
+
+#search-icon{
+    position: absolute;
+    top: 0.55em;
+    left: 1em;
+    font-size: 1rem;
+    color: #A5A5A5;
+}
+
+.search-container{
+    position: absolute;
+    top: 12em;
+    left: 2em;
+}
+
+.search-input,
+.search-btn{
+    border: none;
+    padding: 0.7em 3em;
+}
+
+.search-input{
+    color: #A5A5A5;
+    background-color: #2E2E2F;
+    padding-right: 11em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search-btn{
+    background-color: #4B4B4B;
+    color: #FFFFFF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+/* Placeholder Search Page */
+
+.placeholder{
+    font-size: 1.125rem;
+    margin-top: 12em;
+    color: #2E2E2F;
+    text-align: center;
+}
+
+.placeholder h3{
+    color: #2E2E2F;
+    font-weight: 700;
+}
+
+#film-icon{
+    font-size: 4.375rem;
+}
+
+/* Placeholder Search Page */
+
+.no-movies{
+    margin-top: 12em;
+    text-align: center;
+}
+
+.no-movies-txt{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #787878;
+}
+
+.find{
+    text-decoration: none;
+}
+
+/* Movies */
+
+.movie-feed,
+.explore{
+    max-width: 462px;
+    width: 462px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+.movie-feed{
+    margin-top: 3em;
+    align-items: center;
+}
+
+.movie-container{
+    padding: 1em 0;
+    border-bottom: #2C2C2C solid 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+.movie-info{
+    margin-left: 1.5em;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    align-items: start;
+}
+
+.poster{
+    width: 99px;
+    height: 147px;
+}
+
+h3{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-right: 0.3em;
+}
+
+.fa-star{
+    color: gold
+}
+
+.rating{
+    font-size: 0.75rem;
+}
+
+p{
+    margin-right: 1.2em;
+}
+
+.top,
+.center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top{
+    height: 23px;
+    margin-top: 0.4em
+}
+
+.center{
+    height: 20px;
+    font-size: 0.75rem;
+    margin-top: 1em;
+}
+
+.watchlist{
+    cursor: pointer;
+}
+
+.plot{
+    color: #A5A5A5;
+    font-size: 0.875rem;
+}
+
+.error{
+    font-size: 1.5rem;
+    color: #787878;
+    margin: 10em auto;
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header class="header">
+            <img src="./header.jpg" class="header-img">
+            <h1>My Watchlist</h1>
+            <a href="index.html"><h4 class="search">Search for movies</h4></a>
+        </header>
+        <main>
+            <div class="movie-feed" id="movie-feed">
+                <div class="no-movies">
+                    <h3 class="no-movies-txt">Your watchlist is looking a little empty...</h3>
+                    <a href="index.html" class="find"><h4 class="add"><i class="fa-solid fa-circle-plus"></i> Let’s add some movies!</h4></a>
+                </div>
+            </div>
+        </main>
+        <script src="watchlist.js" type="module"></script>
+    </body>
+</html>
