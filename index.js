@@ -1,6 +1,8 @@
 import { getGenres, getRating} from "./utils.js"
 
-let movieIds = JSON.parse(localStorage.movieIds)
+let movieIds = []
+
+initializeMovieIds()
 
 document.getElementById('search-btn').addEventListener('click', function(){
     const search = document.getElementById('search-input').value
@@ -88,13 +90,21 @@ function removeMovieSearch(movieId){
 }
 
 function getCorrectButtonState(movieId){
-    const movies = JSON.parse(localStorage.movieIds)
     let correctHtml = `<p class="watchlist" data-id="${movieId}"><i class="fa-solid fa-circle-plus"></i> Watchlist</p>`
+    if(movieIds.length > 0){
+        const movies = JSON.parse(localStorage.movieIds)
 
-    for(let i = 0; i < movies.length; i++){
-        if(movies[i] === movieId){
-            correctHtml = `<p class="watchlist" data-id="${movieId}"><i class="fa-solid fa-circle-minus"></i> Remove</p>`
-        }
+        for(let i = 0; i < movies.length; i++){
+            if(movies[i] === movieId){
+                correctHtml = `<p class="watchlist" data-id="${movieId}"><i class="fa-solid fa-circle-minus"></i> Remove</p>`
+            }
+    }
     }
     return correctHtml
+}
+
+function initializeMovieIds(){
+    if(localStorage.getItem('movieIds')){
+        movieIds = JSON.parse(localStorage.movieIds)
+    }
 }
