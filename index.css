@@ -6,6 +6,10 @@ html, body {
     position: relative;
 }
 
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+}
+
 header,
 main{
     margin: 0;
@@ -81,7 +85,7 @@ main{
 .search-container{
     position: absolute;
     top: 12em;
-    left: 2em;
+    left: 1em;
 }
 
 .search-input,
