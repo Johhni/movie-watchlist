@@ -13,7 +13,7 @@ async function renderSelectedMovies(){
     const movies = JSON.parse(localStorage.movieIds)
     let html = ''
     for(let i = 0; i < movies.length; i++){
-        let data = await fetch(`http://www.omdbapi.com/?apikey=81662f65&i=${movies[i]}`)
+        let data = await fetch(`https://www.omdbapi.com/?apikey=81662f65&i=${movies[i]}`)
         .then((response) => response.json())
         .then(data => {
             return data;
