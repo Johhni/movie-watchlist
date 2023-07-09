@@ -17,7 +17,7 @@ document.addEventListener('click', function(e){
 })
 
 function getMovies(searchTerm){
-    fetch(`http://www.omdbapi.com/?apikey=81662f65&s=${searchTerm}`)
+    fetch(`https://www.omdbapi.com/?apikey=81662f65&s=${searchTerm}`)
             .then(res => res.json())
             .then(data => {
                 if(data.Response === 'False'){
@@ -33,7 +33,7 @@ async function renderMovies(arr){
     let fullMovieList = []
     let html = ''
     for(let i = 0; i < arr.length; i++){
-        let data = await fetch(`http://www.omdbapi.com/?apikey=81662f65&t=${arr[i].Title}`)
+        let data = await fetch(`https://www.omdbapi.com/?apikey=81662f65&t=${arr[i].Title}`)
         .then((response) => response.json())
         .then(data => {
             return data;
